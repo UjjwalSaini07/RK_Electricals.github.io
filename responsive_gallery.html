@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="responsive_gallery.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <h1>Image Gallery</h1>
+
+            <div id="mybutton">
+                <a href="index.html" class="-btn -bg -txt">
+                    Home
+                </a>
+            </div>
+
+                <!-- <button class="feedback">Home</button> -->
+                <!-- <a href="index.html" class="feedback">Home</a>
+                </div> -->
+
+            <div class="image-container">
+                <div class="image"><img src="Background_Images/Bg1.jpeg" alt="" ></div>
+                <div class="image"><img src="Background_Images/Bg2.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/Bg3.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/Bg4.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg5.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg6.jpg" alt="" ></div>
+            </div>
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="Bg1.jpeg" alt="">
+                    
+            </div>
+        </div>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src')
+            }
+        })
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
+    </body>
+</html>
+
+
+<!-- *!<div  class="column mcb-column mcb-item-a35bc4956 one tablet-one mobile-one column_button" style="" ><div class="mcb-column-inner mcb-column-inner-a35bc4956 mcb-item-button-inner"><a  class="button  button_size_3"  href="/about-gnh/" style="background-color:#000000!important;color:#ffffff;"    ><span class="button_label">Read more about us</span></a>
+</div></div></div></div></div></div> -->

@@ -1,0 +1,184 @@
+/* *todo For Bright Background */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col {
+  flex-basis: 22%;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.col h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.col ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.col ul li {
+  margin-bottom: 5px;
+}
+
+.col ul li a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.col ul li a:hover {
+  color: #0056b3;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .col {
+    flex-basis: 90%;
+  }
+}
+
+
+
+/* *todo For Dark Background- #1b202d */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  /* body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1b202d; /* Background color applied to the entire page */
+    /* color: #fff; Text color set to white for better contrast */
+  /* } */
+  
+   /* .container {
+    max-width: 100%;
+    padding: 20px;
+  } */
+  
+  /* h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #fff; /* Heading text color set to white */
+  /* } */
+  
+  /* .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  } */
+  
+  /* .col {
+    flex-basis: 22%;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease-out;
+    background-color: #1b202d; /* Background color applied to the columns */
+  /* } */
+  
+  /* .col h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* Heading text color set to white */
+  /* } */
+  
+  /* .col ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .col ul li {
+    margin-bottom: 5px;
+  }
+  
+  .col ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .col ul li a:hover {
+    color: #0056b3;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .col {
+      flex-basis: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .col {
+      flex-basis: 90%;
+    }
+  }
+   */
+

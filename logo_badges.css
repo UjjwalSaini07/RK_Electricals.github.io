@@ -1,0 +1,71 @@
+/* Add some basic styling for better appearance */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.description {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 767px) {
+    .logo-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo-container div {
+        width: 70%;
+        margin: 60px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+/* Responsive Styles for PC */
+@media screen and (min-width: 768px) {
+    .logo-container div {
+        width: 30%;
+        margin: 25px;
+        height: 60px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+}
+
+/* Animation */
+.description:hover {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download PDF</title>
+</head>
+<body>
+    <button id="downloadBtn" class="btn">Download PDF</button>
+
+    <script>
+        // Function to trigger the PDF download
+        function downloadPDF() {
+            const pdfURL = 'RK Electrical.pdf'; // Replace with your actual PDF file URL
+
+            // Create a temporary anchor element
+            const downloadLink = document.createElement('a');
+            downloadLink.href = pdfURL;
+            downloadLink.target = '_blank';
+            downloadLink.download = 'example.pdf'; // Change the download filename if needed
+            downloadLink.click();
+
+            // Clean up the temporary element
+            document.body.removeChild(downloadLink);
+        }
+
+        // Attach the click event to the button
+        const button = document.getElementById('downloadBtn');
+        button.addEventListener('click', downloadPDF);
+    </script>
+</body>
+</html>

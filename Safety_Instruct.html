@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Instruction</title>
+    <link rel="shortcut icon" type="x-icon" href="Logos And Banner/log.ico">
+    <style>
+
+    /* CSS Code  */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1b202d;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styling */
+        h4 {
+            margin: 0;
+            padding: 5px 0;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 0;
+            padding: 5px 0;
+            font-size: 16px;
+        }
+
+        /* Container styles */
+        .content_wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Media queries for responsiveness */
+        /* @media screen and (max-width: 768px) {
+            .mcb-wrap {
+                display: block;
+                width: 100%;
+            }
+
+            .mcb-wrap-inner {
+                padding: 20px;
+            }
+
+            .column_column {
+                text-align: center;
+            }
+        } */
+
+        @media screen and (max-width: 768px) {
+            .image_wrapper img {
+                display: block;
+                margin: 0 auto; /* Center the image */
+            }
+
+            /* Move the button to the top right corner */
+            #mybutton {
+                position: absolute;
+                top: 10px;
+                left: 280px;
+            }
+
+            .column_column {
+                text-align: center;
+            }
+        }
+
+        /* Animation for fadeInRight effect */
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Animation for fadeInDown effect */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Additional styling */
+        .column_column {
+            animation: fadeInRight 1s;
+        }
+
+        .column_icon_box {
+            animation: fadeInDown 1s;
+        }
+
+        /* Hover effect for images */
+        .image_wrapper img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.7); /* Adding a shadow effect */
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+        }
+
+        /* Adding border around h4 and p individually */
+        h4, p {
+            padding: 10px;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            transition: border-color 0.3s ease; /* Adding transition for border color change */
+        }
+
+        /* Additional Animation for h4 and p elements */
+        h4, p {
+            animation: fadeInDown 1s;
+        }
+
+        /* Animation for the button */
+        .-btn {
+            transition: opacity 0.3s ease;
+        }
+
+        /* Styling for section headings */
+        h2 {
+            margin: 20px 0;
+            padding: 10px;
+            font-size: 30px;
+            background-color: #ffcc00;
+            color: #1b202d;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        }
+
+        /* Additional animation for section headings */
+        h2 {
+            animation: fadeInRight 1s;
+        }
+
+        /* Animation for divider */
+        .divider {
+            animation: fadeInRight 1s;
+        }
+
+        /* Styling for content wrapper */
+        .content_wrapper {
+            background-color: #1b202d;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        a {
+            text-decoration: none;
+        }
+        .-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 106px;
+            height: 46px;
+            text-align: center;
+            border-radius: 12px;
+        }
+        #mybutton {
+            position: fixed;
+            top: 36px;
+            right: 160px;
+        }
+        .-btn:hover {
+            opacity: .8;
+        }
+        .-bg {
+            background: #1c449b;
+        } 
+        .-txt {
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- ... Rest of the code ... -->
+    <div id="mybutton">
+        <a href="index.html" class="-btn -bg -txt">Home</a>
+    </div>
+
+    <div id="Content" role="main">
+        <div class="content_wrapper clearfix">
+
+            <div class="sections_group">
+                <!-- todo Image1 With Description -->
+                <div class="entry-content" itemprop="mainContentOfPage">
+                    <div class="image_wrapper"><img class="scale-with-grid" src="Logos And Banner/Homepage-Icons-01.png" alt="Homepage-Icons-01" width="116" height="112" /></div>
+                    <div class="desc_wrapper"></div>
+                </div>
+
+                <div class="wrap mcb-wrap mcb-wrap-321ca3165 three-fourth tablet-three-fourth mobile-one valign-top clearfix" data-desktop-col="three-fourth" data-tablet-col="tablet-three-fourth" data-mobile-col="mobile-one">
+                    <div class="mcb-wrap-inner mcb-wrap-inner-321ca3165">
+                        <div class="mcb-wrap-background-overlay"></div>
+                        <div class="column mcb-column mcb-item-5a277c24b one tablet-one mobile-one column_column animate">
+                            <div class="mcb-column-inner mcb-column-inner-5a277c24b mcb-item-column-inner">
+                                <div class="column_attr mfn-inline-editor clearfix">
+                                    <h4><b>Commercial and Residential</b></h4>
+                                    <!-- todo Description 1 -->
+                                    <p><b>For Commercial Electrical Services:</b><br>
+                                        We are skilled electricians specializes in providing comprehensive commercial electrical services tailored to meet the unique needs of businesses. From electrical system design and installation to routine maintenance and emergency repairs, we ensure that your commercial space operates efficiently and safely. Our expert technicians can handle everything, from lighting solutions and power distribution to cabling and security systems, helping your business stay productive and secure.<br><br><b>For Residential Electrical Services:</b><br>
+                                        At our electrical website, we take pride in delivering top-notch residential electrical services to homeowners. Whether you need electrical installations for a new construction project or electrical repairs and upgrades for an existing home, we have the expertise to handle it all. Our professionals are well-versed in handling everything from electrical panel upgrades and rewiring to installing energy-efficient lighting and smart home systems. We prioritize safety and efficiency, ensuring that your family's electrical needs are met with the utmost care and precision.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="wrap mcb-wrap mcb-wrap-a9ffcf3bd divider mobile-one valign-top clearfix" data-desktop-col="divider" data-tablet-col="" data-mobile-col="mobile-one">
+                    <div class="mcb-wrap-inner mcb-wrap-inner-a9ffcf3bd">
+                        <div class="mcb-wrap-background-overlay"></div>
+                        <div class="mfn-drag-helper placeholder-wrap"></div>
+                    </div>
+                </div>
+                
+                <!-- todo Image2 With Description -->
+                <div class="wrap mcb-wrap mcb-wrap-21fd6cd75 one-fourth tablet-one-fourth mobile-one valign-top clearfix" data-desktop-col="one-fourth" data-tablet-col="tablet-one-fourth" data-mobile-col="mobile-one">
+                    <div class="mcb-wrap-inner mcb-wrap-inner-21fd6cd75">
+                        <div class="mcb-wrap-background-overlay"></div>
+                        <div class="column mcb-column mcb-item-c4278679d one tablet-one mobile-one column_icon_box animate">
+                            <div class="mcb-column-inner mcb-column-inner-c4278679d mcb-item-icon_box-inner">
+                                <div class="icon_box icon_position_top no_border">
+                                    <div class="image_wrapper"><img class="scale-with-grid" src="Logos And Banner/Homepage-Icons-02.png" alt="Homepage-Icons-02" width="116" height="112" /></div>
+                                    <div class="desc_wrapper"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wrap mcb-wrap mcb-wrap-7aee3d65b three-fourth tablet-three-fourth mobile-one valign-top clearfix" data-desktop-col="three-fourth" data-tablet-col="tablet-three-fourth" data-mobile-col="mobile-one">
+                    <div class="mcb-wrap-inner mcb-wrap-inner-7aee3d65b">
+                        <div class="mcb-wrap-background-overlay"></div>
+                        <div class="column mcb-column mcb-item-1e0936d0d one tablet-one mobile-one column_column animate">
+                            <div class="mcb-column-inner mcb-column-inner-1e0936d0d mcb-item-column-inner">
+                                <div class="column_attr mfn-inline-editor clearfix">
+                                    <h4><b>Safety is More than Peace of Mind</b></h4>
+                                    <!-- todo Description 2 -->
+                                    <p>Electrical Safety is paramount in both residential and commercial settings. Ensure all appliances and cords are in good condition, keeping them away from water sources. Use outlet covers to childproof and avoid using extension cords as permanent solutions. Outdoors, utilize weatherproof equipment and follow proper installation guidelines. For repairs and installations, always rely on qualified professionals. Unplug devices when not in use, and equip your space with smoke detectors and fire extinguishers. Stay clear of power lines, and educate everyone on electrical safety to create a secure environment for all. Prioritize safety, and protect against potential hazards.</p>
+                                    <br>
+                                    </div></div></div></div></div>
+                                    <div  class="wrap mcb-wrap mcb-wrap-9a651345a divider  mobile-one valign-top clearfix" data-desktop-col="divider" data-tablet-col="" data-mobile-col="mobile-one" style="padding:;background-color:"   >
+                                        <div class="mcb-wrap-inner mcb-wrap-inner-9a651345a"  >
+                                            <div class="mcb-wrap-background-overlay"></div>
+                                            <div class="mfn-drag-helper placeholder-wrap"></div></div></div>
+                                            <div  class="wrap mcb-wrap mcb-wrap-3f93b9e80 one-fourth tablet-one-fourth mobile-one valign-top clearfix" data-desktop-col="one-fourth" data-tablet-col="tablet-one-fourth" data-mobile-col="mobile-one" style="padding: ;background-color:"><div class="mcb-wrap-inner mcb-wrap-inner-3f93b9e80"  >
+                                                <div class="mcb-wrap-background-overlay"></div>
+                                                <!-- todo Image3 With Description -->
+                                                <div  class="column mcb-column mcb-item-5146efbcd one tablet-one mobile-one column_icon_box animate" style="" data-anim-type="fadeInDown">
+                                                    <div class="mcb-column-inner mcb-column-inner-5146efbcd mcb-item-icon_box-inner">
+                                                        <div class="icon_box icon_position_top no_border">
+                                                            <div class="image_wrapper"><img class="scale-with-grid" src="Logos And Banner/Homepage-Icons-03.png" alt="Homepage-Icons-03" width="116" height="112"/></div>
+                                                            <div class="desc_wrapper"></div></div>
+                                    </div></div></div></div>
+                                    <div  class="wrap mcb-wrap mcb-wrap-e02b03add three-fourth tablet-three-fourth mobile-one valign-top clearfix" data-desktop-col="three-fourth" data-tablet-col="tablet-three-fourth" data-mobile-col="mobile-one" style="padding:;background-color:"   >
+                                        <div class="mcb-wrap-inner mcb-wrap-inner-e02b03add"  >
+                                            <div class="mcb-wrap-background-overlay"></div>
+                                            <div  class="column mcb-column mcb-item-dcda40b45 one tablet-one mobile-one column_column animate" style="" data-anim-type="fadeInRight">
+                                                <div class="mcb-column-inner mcb-column-inner-dcda40b45 mcb-item-column-inner">
+                                                    <div class="column_attr mfn-inline-editor clearfix" style="">
+                                                        <h4><b>Economical Savings</b></h4>
+                                    <!-- todo Description 3 -->
+                                    <p>Welcome to our instruction page for achieving economic savings through efficient electrical practices. We understand the importance of affordability, and our services are designed to deliver high-quality solutions at reasonable prices. Embrace energy-efficient appliances, LED lighting, and smart power usage to reduce electricity consumption and lower bills. Consider solar power options for long-term savings. We also provide energy audits to optimize your electrical setup and minimize wasteful usage. Trust us to deliver top-notch service without compromising on quality or safety, ensuring a greener and more economical future for you.
+                                    Having the effective means to control all appliances allows for ultimate energy conservation. Although this seems complex, the technology is incredibly user friendly and easy to learn. Incorporating home automation not only makes your life easier, it’s fun to use. </p></div></div></div></div></div></div></div>
+</body>
+
+</html>

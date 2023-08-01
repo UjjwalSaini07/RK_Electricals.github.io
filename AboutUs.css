@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1b202d; /* Updated background color */
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+/* *todo Button MOdification */
+a {
+    text-decoration: none;
+  }
+.-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 106px;
+    height: 46px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  #mybutton {
+    position: fixed;
+    top: 26px;
+    right: 45px;
+  }
+.-btn:hover {
+    opacity: .8;
+  }
+.-bg {
+    background: #1c449b;
+  } 
+.-txt {
+    color: #fff;
+  }
+
+/* *todo END : Button MOdification */
+  
+
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about-section {
+    margin-top: 30px;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 80%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.about-image {
+    flex: 0.5;
+    max-width: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+
+.about-image img {
+    width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.column_column {
+    animation: fadeInRight 1s;
+}
+
+.column_icon_box {
+    animation: fadeInDown 1s;
+}
+
+/* Media query for screens with a maximum width of 768px (e.g., tablets and smartphones) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .about-content, .about-image {
+        flex: 1;
+        max-width: 100%;
+    }
+}
+
+/* Add some boundary to the image */
+.about-image img {
+    width: 100%;
+    height: auto;
+    border: 5px solid #fff;
+    transition: border 0.3s ease;
+}
+
+/* .about-image:hover img {
+    border-color: #ffcc00; /* Change the border color on hover */
+/* } */
+
+.about-image img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7); /* Adding a shadow effect */
+    border: 1.5px solid #ffcc00;
+    border-radius: 10px;
+}
+
+/* Add a short boundary to the container */
+.container {
+    padding: 20px;
+    border: 5px solid #ffcc00;
+    border-radius: 20px; /* Add some border radius for a rounded look */
+}
+
+/* Styling for the "About Us" heading */
+.about-content h2 {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase; /* Convert the text to uppercase */
+    color: #ffcc00; /* Change the heading color */
+}
+
+/* Styling for the paragraph */
+.about-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify; /* Justify the text */
+}
+
+/* Add hover effect to the social icons */
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social i {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* .social i:hover {
+    transform: scale(1.2) rotate(15deg);
+    color: #ffcc00;
+} */
+
+/* Additional style for social icons to be placed under the paragraph */
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social a {
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    background-color: #1708ee;
+    border-radius: 40%;
+    transition: background-color 0.3s ease;
+}
+
+.social a:hover {
+    background-color: #ffcc00;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation for fadeInDown effect */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

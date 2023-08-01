@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="responsive_vidplaylist.css">
+    </head>
+
+    <body>
+        <h1>Video Playlist Gallery</h1>
+        <div id="mybutton">
+            <a href="index.html" class="-btn -bg -txt">
+                Home
+            </a>
+        </div>
+
+        <div class="container">
+            <div class="main-video">
+                <div class="video">
+                    <video src="Temporary Videoes/Vid1.mp4" controls muted autoplay></video>
+                    <h3 class="title">Video Playlist Is Here</h3>
+                </div>
+            </div>
+
+            <div class="video-list">
+                <div class="vid active">
+                    <video src="Temporary Videoes/Vid1.mp4"  muted></video>
+                    <h3 class="title">01. Video Is Here</h3>
+                </div>
+                <div class="vid">
+                    <video src="Temporary Videoes/Vid2.mp4"  muted></video>
+                    <h3 class="title">02. Video Is Here</h3>
+                </div>
+                <div class="vid">
+                    <video src="Temporary Videoes/Vid3.mp4"  muted></video>
+                    <h3 class="title">03. Video Is Here</h3>
+                </div>
+                <div class="vid">
+                    <video src="Temporary Videoes/Vid4.mp4"  muted></video>
+                    <h3 class="title">04. Video Is Here</h3>
+                </div>
+                <div class="vid">
+                    <video src="Temporary Videoes/Vid5.mp4"  muted></video>
+                    <h3 class="title">05. Video Is Here</h3>
+                </div>
+                <div class="vid">
+                    <video src="Temporary Videoes/Vid6.mp4"  muted></video>
+                    <h3 class="title">06. Video Is Here</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            let listVideo = document.querySelectorAll('.video-list .vid');
+            let mainVideo = document.querySelector('.main-video video');
+            let title = document.querySelector('.main-video .title');
+
+            listVideo.forEach(video =>{
+                video.onclick = () =>{
+                    listVideo.forEach(vid => vid.classList.remove('active'));
+                    video.classList.add('active');
+                    if(video.classList.contains('active')){
+                        let src = video.children[0].getAttribute('src');
+                        mainVideo.src = src;
+                        let text = video.children[1].innerHTML;
+                        title.innerHTML = text;
+                    };
+                };
+            });
+
+        </script>
+    </body>
+</html>
