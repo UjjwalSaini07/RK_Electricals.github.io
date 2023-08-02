@@ -20,13 +20,13 @@ a {
     justify-content: center;
     align-items: center;
     width: 106px;
-    height: 46px;
+    height: 50px;
     text-align: center;
     border-radius: 12px;
   }
   #mybutton {
     position: fixed;
-    top: 26px;
+    top: 12px;
     right: 45px;
   }
 .-btn:hover {
