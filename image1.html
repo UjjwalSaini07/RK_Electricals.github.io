@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="image1.css">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <a href="index.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                HOME</a>
+            <a href="Video1.html">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                VIDEO GALLERY</a>
+        </nav>
+
+        <div class="container">
+
+            <h1>Image Gallery</h1>
+
+            <div class="image-container">
+                <div class="image"><img src="Background_Images/Bg1.jpeg" alt="" ></div>
+                <div class="image"><img src="Background_Images/Bg2.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/Bg3.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/Bg4.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg5.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg6.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg1.jpeg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg2.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/Bg3.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg4.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg4.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg4.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg4.jpg" alt="" ></div>
+                <div class="image"><img src="Background_Images/bg4.jpg" alt="" ></div>
+
+            </div>
+
+            <div class="popup-image">
+                <span>&times;</span>
+                <img src="Bg1.jpeg" alt="">   
+            </div>
+        </div>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src')
+            }
+        })
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+        }
+    </script>
+
+    </body>
+</html>

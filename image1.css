@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  /* border: 3px solid orangered; */
+  display: flex;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    background-color: #1b202d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  padding: 15px;
+  color: #333;
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase; /* Convert the text to uppercase */
+  color: #ffcc00; /* Change the heading color */
+}
+
+.image-container {
+  padding: 20px;
+  border: 5px solid #ffcc00;
+  border-radius: 20px; /* Add some border radius for a rounded look */
+}
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.container .image-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.container .image-container .image{
+  height: 250px;
+  width: 350px;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0,0,0,.1);
+  object-fit: cover;
+  overflow: hidden;
+  cursor: pointer;
+} 
+
+.container .image-container .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.container .image-container .image:hover img{
+  transform: scale(1.1);
+}
+
+.container .popup-image{
+  position: fixed;
+  top: 0; left: 0;
+  background: rgba(0,0,0,.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+a:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a span{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+.navbar {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    z-index: 100; /* Ensure the navbar is on top of other content */
+}
+
+.navbar a {
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 15px;
+    position: relative;
+    padding: 5px 6px; /* Adjust padding for better visibility */
+}
+
+.navbar a:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+/* Todo: Changes In Close button */
+.container .popup-image span{
+  position: absolute;
+  top: 30px; right: 15px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor: pointer;
+  z-index: 100;
+}
+.container .popup-image img{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  border:5px solid #fff;
+  border-radius: 5px;
+  width: 750px;
+  object-fit: cover;
+}
+
+@media(max-width: 768px){
+  .container .popup-image img{
+      width: 195px;
+  }
+}

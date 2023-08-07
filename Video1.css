@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    background-color: #1b202d;
+    /* border: 3px solid orangered; */
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    color: #ffcc00;
+    text-align: center;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 5% 5%;
+    border: 5px solid #ffcc00;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.container .main-video {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.container .main-video video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container .main-video .title {
+    color: #333;
+    font-size: 28px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+}
+
+.container .video-list {
+    background: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.container.video-list::-webkit-scrollbar {
+    width: 7px;
+}
+.container.video-list::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 50px;
+  }
+.container.video-list::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+
+
+.container .video-list .vid video {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.container .video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #1b202d;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 12px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.container .video-list .vid:hover {
+    background: #0828ab;
+}
+
+.container .video-list .vid.active .title {
+    color: #ffcc00;
+}
+
+.container .video-list .vid .title {
+    color: #ffcc00;
+}
+
+.container .video-list .vid {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #1b202d;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 12px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.container .video-list .vid:hover {
+    background: #0828ab;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container .video-list .vid.active .title {
+    color: #ffcc00;
+}
+
+.container .video-list .vid .title {
+    color: #ffcc00;
+}
+
+.button-container {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .bouncing-button {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  .bouncing-button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    border-radius: 50%;
+    z-index: -1;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .bouncing-button:hover {
+    background-color: #1523bb;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .bouncing-button:hover:before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.7);
+  }
+
+  .bouncing-button:hover span {
+    animation: bounce 0.5s ease infinite;
+  }
+
+  .bouncing-button span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transform: translateZ(0); /* Prevent flickering in some browsers */
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-15px) scale(0.95);
+    }
+    50% {
+      transform: translateY(0) scale(1.1);
+    }
+    75% {
+      transform: translateY(-5px) scale(0.98);
+    }
+  }
