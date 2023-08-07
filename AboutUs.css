@@ -10,38 +10,7 @@ header {
     background-color: #333;
     padding: 10px;
 }
-
-/* *todo Button MOdification */
-a {
-    text-decoration: none;
-  }
-.-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 106px;
-    height: 50px;
-    text-align: center;
-    border-radius: 12px;
-  }
-  #mybutton {
-    position: fixed;
-    top: 12px;
-    right: 45px;
-  }
-.-btn:hover {
-    opacity: .8;
-  }
-.-bg {
-    background: #1c449b;
-  } 
-.-txt {
-    color: #fff;
-  }
-
-/* *todo END : Button MOdification */
   
-
 main {
     padding: 20px;
 }
@@ -118,10 +87,6 @@ p {
     transition: border 0.3s ease;
 }
 
-/* .about-image:hover img {
-    border-color: #ffcc00; /* Change the border color on hover */
-/* } */
-
 .about-image img:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease;
@@ -167,19 +132,7 @@ p {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* .social i:hover {
-    transform: scale(1.2) rotate(15deg);
-    color: #ffcc00;
-} */
-
-/* Additional style for social icons to be placed under the paragraph */
-.social {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social a {
+.social a.icon {
     display: inline-block;
     margin: 0 5px;
     text-align: center;
@@ -193,7 +146,7 @@ p {
     transition: background-color 0.3s ease;
 }
 
-.social a:hover {
+.social a.icon:hover {
     background-color: #ffcc00;
 }
 
@@ -220,4 +173,138 @@ p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+/* todo GLowing Button Coding */
+a.button{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+   
+}
+a.button:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+a.button:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+a.button:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+a.button span{
+    position: absolute;
+    display: block;
+}
+a.button span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+a.button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+a.button span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+a.button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+.navbar {
+    position: absolute;
+    top: -25px;
+    right: 10px;
+    display: flex;
+    z-index: 100; /* Ensure the navbar is on top of other content */
+}
+
+.navbar a {
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 15px;
+    position: relative;
+    padding: 5px 6px; /* Adjust padding for better visibility */
+}
+
+.navbar a:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
