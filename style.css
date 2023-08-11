@@ -107,6 +107,22 @@ h1 {
   color: #0056b3;
 }
 
+/* .header-container {
+  background: linear-gradient(135deg, #f5f5f5, #ffffff);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px 20px;
+} */
+
+.copyrightText{
+  width: 100%;
+  /* background: #181818; */
+  background: #1b202d;
+  padding: 8px 100px;
+  text-align: center;
+  color: #ffffff;
+}
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -124,7 +140,7 @@ h1 {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .col {
     flex-basis: 90%;
   }
