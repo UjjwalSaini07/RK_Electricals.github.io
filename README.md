@@ -3,5 +3,4 @@ This Website created By me and Host Using Github pages for Work.
 
 Website Link - https://ujjwalsaini07.github.io/RK_Electricals.github.io/
 
-![Screenshot 2023-08-01 160247](https://github.com/UjjwalSaini07/RK_Electricals.github.io/assets/73696489/38d8049e-abae-4072-b1be-2213568a5315)
-
+![RK_Card](https://github.com/UjjwalSaini07/RK_Electricals.github.io/assets/73696489/0a3f58e6-63dd-40a0-8514-1f916c0e81d9)
