@@ -1,71 +1,188 @@
-/* Add some basic styling for better appearance */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
-.logo-container {
+.logo-grid {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
 }
 
-.logo {
-    max-width: 150px;
+.logo-item {
+    flex: 1 0 calc(14.28% - 20px); /* 7 items per row, with 10px gap each side */
+    margin: 10px;
+    text-align: center;
+}
+
+.logo-item img {
+    max-width: 100%;
     height: auto;
 }
 
 .description {
-    text-align: center;
     margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 14px;
+    color: #333;
 }
 
-/* Responsive Styles for Mobile */
-@media screen and (max-width: 767px) {
-    .logo-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .logo-container div {
-        width: 70%;
-        margin: 60px;
-    }
-
-    .description {
-        font-size: 16px;
-    }
+.logo-item {
+    flex: 0 0 auto; /* Fixed size for each logo, no wrapping */
+    margin: 10px;
+    text-align: center;
 }
 
-/* Responsive Styles for PC */
-@media screen and (min-width: 768px) {
-    .logo-container div {
-        width: 30%;
-        margin: 25px;
-        height: 60px;
-    }
+/* Todo: Upto here all images place in horizontal row */
 
-    .description {
-        font-size: 18px;
-    }
+.logo-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333; /* Add border style */
+    border-radius: 10px; /* Round the corners */
 }
 
-/* Animation */
-.description:hover {
-    animation: bounce 0.5s;
+/* Todo: Upto here all images are bordered */
+
+.logo-item {
+    flex: 0 0 auto;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
-@keyframes bounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+.logo-item:hover {
+    transform: translateY(-5px); /* Lift the box on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.logo-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+/* Todo: Upto here all images are bordered 3d bordering*/
+
+.logo-item {
+    flex: 0 0 auto;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.logo-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+.description-container {
+    padding: 10px;
+    border: 2px solid #333; /* Add border to the description container */
+    border-radius: 10px; /* Round the corners */
+    background-color: #fff; /* Add a background color */
+}
+
+.description {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/*todo: Border styling with text section */
+.logo-item {
+    flex: 0 0 calc(14.28% - 20px); /* Adjust width to fit 7 logos in a row */
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    flex: 1; /* Allow the image to grow and shrink */
+    margin-bottom: 10px; /* Add space between image and description */
+}
+
+.description-container {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    flex: 1; /* Allow the container to grow and shrink */
+}
+
+.description {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Todo: Equals Heights */
+.logo-item img {
+    max-width: 100%;
+    height: auto;
+    border: 3.5px solid transparent; /* Remove the black border */
+    border-radius: 20px;
+    flex: 1;
+    margin-bottom: 10px;
+    transition: border-color 0.3s; /* Add transition for border color */
+}
+
+.logo-item:hover img {
+    border-color: #006ac6; /* Change border color on hover */
+}
+
+.description-container {
+    padding: 8px;
+    border: 3.5px solid transparent; /* Remove the black border */
+    border-radius: 20px;
+    background-color: #fff;
+    flex: 5;
+}
+
+.logo-item:hover .description-container {
+    border-color: #006ac6; /* Change border color on hover */
+}
+
+.description {
+    margin: 15;
+    font-size: 14px;
+    color: #000000;
+}
+
+
+/* Todo: All Done Few left Fixing that */
+.logo-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: wrap; /* Allow items to wrap if necessary */
+}
+
+.logo-item {
+    flex: 0 0 calc(14.28% - 20px); /* Approximately 14.28% width for each item */
+    margin: 10px;
+    text-align: center;
 }

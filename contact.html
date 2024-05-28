@@ -1,102 +1,276 @@
+<!-- Todo: Main HTML Code for Contact Page-->
+
 <!DOCTYPE html>
-<html  lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Contact Us</title>
-        <link rel="shortcut icon" type="x-icon" href="Logos And Banner/log.ico">
-        <link rel="stylesheet" href="contact.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-    <body>
-
-        <section class="contact">
-            <div id="mybutton">
-                <a href="index.html" class="-btn -bg -txt">
-                    Home
-                </a>
-            </div>
-            <div class="content">
-                <h2>Contact Us</h2>
-                <p>Are you looking for Residential or Commercial Electrical Services? Feel free to give us a call, email us or fill out the contact form. Get a FREE ESTIMATE today! We are here to answer any of your questions 7 days a week.We are here to assist you! If you have any questions, comments, or feedback, please don't hesitate to get in touch with us.Connect with us today and let's start a conversation!</p>
-            </div>
-            <div class="container">
-                <div class="contactInfo">
-                    <div class="box">
-                        <div class="icon"><i class="fa-solid fa-location-dot fa-bounce"></i></div>
-                        <div class="text">
-                            <h3>Address</h3>
-                            <p>B-30 New Moti Nagar<br>New Delhi-110015</p>
-                        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" type="x-icon" href="Logos And Banner/log.ico">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="contact">
+        <div id="mybutton">
+            <a href="index.html" class="-btn -bg -txt">
+                Home
+            </a>
+        </div>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Are you looking for Residential or Commercial Electrical Services? Feel free to give us a call, email us or fill out the contact form. Get a FREE ESTIMATE today! We are here to answer any of your questions 7 days a week. We are here to assist you! If you have any questions, comments, or feedback, please don't hesitate to get in touch with us. Connect with us today and let's start a conversation!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot fa-bounce"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>B-Block New Moti Nagar Phase-1, New Delhi-110015</p>
                     </div>
-                    <div class="box">
-                        <div class="icon"><i class="fa-solid fa-envelope fa-beat"></i>
-                        </div>
-                        <div class="text">
-                            <h3>E-Mail</h3>
-                            <p>rajkumarsaini291971@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon"><i class="fa-solid fa-phone fa-shake"></i></div>
-                        <div class="text">
-                            <h3>Phone</h3>
-                            <p>9990699079</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="icon"><i class="fa-solid fa-address-card fa-bounce"></i></div>
-                        <div class="download_pdf-btn">
-                            <button id="downloadBtn" class="btn">Business Card</button>
-        
-                            <script>
-                                // Function to trigger the PDF download
-                                function downloadPDF() {
-                                    const pdfURL = 'RK Electrical.pdf'; // Replace with your actual PDF file URL
-        
-                                    // Create a temporary anchor element
-                                    const downloadLink = document.createElement('a');
-                                    downloadLink.href = pdfURL;
-                                    downloadLink.target = '_blank';
-                                    downloadLink.download = 'example.pdf'; // Change the download filename if needed
-                                    downloadLink.click();
-        
-                                    // Clean up the temporary element
-                                    document.body.removeChild(downloadLink);
-                                }
-        
-                                // Attach the click event to the button
-                                const button = document.getElementById('downloadBtn');
-                                button.addEventListener('click', downloadPDF);
-                            </script>
-                        </div>
-                    </div>
-
                 </div>
-
-
-                <div class="contactForm">
-                    <form>
-                        <h2>Send Message</h2>
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>Full Name</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="text" name="" required="required">
-                            <span>E-Mail</span>
-                        </div>
-                        <div class="inputBox">
-                            <textarea required="required"></textarea>
-                            <span>Type Your Message...</span>
-                        </div>
-                        <div class="inputBox">
-                            <input type="submit" name="" value="Send">
-                        </div>
-                    </form>
-                    <div class="visme_d" data-title="FirstAnimatedWebsite" data-url="y40wpx4r-firstanimatedwebsite?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="32708"></div><script src="https://static-bundles.visme.co/forms/vismeforms-embed.js"></script>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope fa-beat"></i></div>
+                    <div class="text">
+                        <h3>E-Mail</h3>
+                        <p>rajkumarsaini291971@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone fa-shake"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9990699079</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-address-card fa-bounce"></i></div>
+                    <div class="download_pdf-btn">
+                        <button id="downloadBtn" class="btn">Business Card</button>
+                        <script>
+                            function downloadPDF() {
+                                const pdfURL = 'RK Electrical.pdf';
+                                const downloadLink = document.createElement('a');
+                                downloadLink.href = pdfURL;
+                                downloadLink.target = '_blank';
+                                downloadLink.download = 'BusinessCard.pdf';
+                                downloadLink.click();
+                            }
+                            const button = document.getElementById('downloadBtn');
+                            button.addEventListener('click', downloadPDF);
+                        </script>
+                    </div>
                 </div>
             </div>
-        </section>
-    </bod>
+        <div class="mapAndContactForm">
+            <div class="mapSection">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5393826342255!2d77.14058945079842!3d28.66222527921225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03009e810ffd%3A0xcf2bda6f1a9acec6!2sNew%20Moti%20Nagar%2C%20Moti%20Nagar%2C%20Delhi%2C%20110015!5e0!3m2!1sen!2sin!4v1636631965111!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <!-- <iframe src="https://www.google.com/maps/place/Delhi,+India/@28.6436846,76.7635755,10z/data=!3m1!4b1!4m6!3m5!1s0x390cfd5b347eb62d:0x37205b715389640!8m2!3d28.7040592!4d77.1024902!16zL20vMDlmMDc?hl=en&entry=ttu" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>E-Mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
 </html>
+
+<!-- Todo: Previous Changes -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" type="x-icon" href="Logos And Banner/log.ico">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="contact">
+        <div id="mybutton">
+            <a href="index.html" class="-btn -bg -txt">
+                Home
+            </a>
+        </div>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Are you looking for Residential or Commercial Electrical Services? Feel free to give us a call, email us or fill out the contact form. Get a FREE ESTIMATE today! We are here to answer any of your questions 7 days a week.We are here to assist you! If you have any questions, comments, or feedback, please don't hesitate to get in touch with us.Connect with us today and let's start a conversation!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot fa-bounce"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>B-30 New Moti Nagar<br>New Delhi-110015</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope fa-beat"></i></div>
+                    <div class="text">
+                        <h3>E-Mail</h3>
+                        <p>rajkumarsaini291971@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone fa-shake"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9990699079</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-address-card fa-bounce"></i></div>
+                    <div class="download_pdf-btn">
+                        <button id="downloadBtn" class="btn">Business Card</button>
+                        <script>
+                            function downloadPDF() {
+                                const pdfURL = 'RK Electrical.pdf';
+                                const downloadLink = document.createElement('a');
+                                downloadLink.href = pdfURL;
+                                downloadLink.target = '_blank';
+                                downloadLink.download = 'BusinessCard.pdf';
+                                downloadLink.click();
+                            }
+                            const button = document.getElementById('downloadBtn');
+                            button.addEventListener('click', downloadPDF);
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>E-Mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html> -->
+
+
+<!-- Todo: Making this Code again -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" type="x-icon" href="Logos And Banner/log.ico">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <section class="contact">
+        <div id="mybutton">
+            <a href="index.html" class="-btn -bg -txt">
+                Home
+            </a>
+        </div>
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Are you looking for Residential or Commercial Electrical Services? Feel free to give us a call, email us or fill out the contact form. Get a FREE ESTIMATE today! We are here to answer any of your questions 7 days a week. We are here to assist you! If you have any questions, comments, or feedback, please don't hesitate to get in touch with us. Connect with us today and let's start a conversation!</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot fa-bounce"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>B-30 New Moti Nagar<br>New Delhi-110015</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope fa-beat"></i></div>
+                    <div class="text">
+                        <h3>E-Mail</h3>
+                        <p>rajkumarsaini291971@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone fa-shake"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>9990699079</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-address-card fa-bounce"></i></div>
+                    <div class="download_pdf-btn">
+                        <button id="downloadBtn" class="btn">Business Card</button>
+                        <script>
+                            function downloadPDF() {
+                                const pdfURL = 'RK Electrical.pdf';
+                                const downloadLink = document.createElement('a');
+                                downloadLink.href = pdfURL;
+                                downloadLink.target = '_blank';
+                                downloadLink.download = 'BusinessCard.pdf';
+                                downloadLink.click();
+                            }
+                            const button = document.getElementById('downloadBtn');
+                            button.addEventListener('click', downloadPDF);
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form>
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span>E-Mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                        <span>Type Your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html> -->
+
+

@@ -1,233 +1,449 @@
-*{
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-/* *todo Button Modification */
-a {
-    text-decoration: none;
-  }
-.-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 106px;
-    height: 46px;
-    text-align: center;
-    border-radius: 12px;
-  }
-  #mybutton {
-    position: fixed;
-    top: 36px;
-    right: 45px;
-  }
-.-btn:hover {
-    opacity: .8;
-  }
-.-bg {
-    background: #f9f104;
-  } 
-.-txt {
-    color: #0602f8;
-  }
-/* *todo Ends */
 
-.contact{
-    position: relative;
-    min-height: 100vh;
+body {
+    background: #f2f2f2;
+}
+
+.contact {
     padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url(Background_Images/Bg3.jpg);
-    background-size: cover;
 }
-.contact .content{
-    max-width: 800px;
+
+#mybutton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#mybutton .-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#mybutton .-btn:hover {
+    background: #0097a7;
+}
+
+.content {
     text-align: center;
+    margin-bottom: 50px;
 }
-.contact .content h2{
+
+.content h2 {
     font-size: 36px;
-    font-weight: 500;
-    color: #fff;
-}
-.contact .content p{
-    align-items: center;
-    font-weight: 300;
-    color: #fff;
-}
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-.container .contactInfo{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-.container .contactInfo .box{
-    position: relative;
-    padding: 20px 0;
-    display: flex;
-}
-.container .contactInfo .box .icon{
-    min-width: 60px;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 22px; 
-}
-.container .contactInfo .box .text{
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #fff;
-    flex-direction: column;
-    font-weight: 300;
-}
-
-/* *! Bussiness BUtton Styling */
-.container .contactInfo .box .download_pdf-btn{
-    display: flex;
-    margin-left: 20px;
-    margin-top: 10px;
-    font-size: 16px;
-    color: #fff;
-    flex-direction: column;
-    font-weight: 300;
-}
-
-.btn {
-    padding: 12px 24px;
-    font-size: 18px;
-    /* background-color: #0909e7ea; */
-    background-color: #000000ea;
-    color: rgb(253, 253, 253);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out, transform 0.3s ease-in-out;
-}
-
-/* Hover effect */
-.btn:hover {
-    /* background-color: #ba2020; */
-    background-color: #0906b9;
-    transform: scale(1.05);
-}
-
-/* Click effect */
-.btn:active {
-    background-color: #3c893d;
-    transform: scale(0.95);
-}
-
-/* Pulse animation */
-@keyframes btnPulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-}
-
-.btn:hover:not(:active) {
-    animation: btnPulse 1s infinite ease-in-out;
-}
-/* *! Ends */
-
-.container .contactInfo .box .text h3{
-    font-weight: 500;
-    color: #00bcd4;
-}
-.contactForm{
-    width: 40%;
-    padding: 40px;
-    background: #fff;
-}
-.contactForm h2{
-    font-size: 30px;
     color: #333;
-    font-weight: 500;
 }
-.contactForm .inputBox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
+
+.content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
 }
-.contactForm .inputBox input,
-.contactForm .inputBox textarea{
-    width: 100%;
-    padding: 5px 0;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactInfo, .contactForm {
+    width: 48%;
+}
+
+.contactInfo .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactInfo .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.contactInfo .icon {
+    font-size: 40px;
+    color: #00bcd4;
+    margin-right: 20px;
+}
+
+.contactInfo .text h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contactInfo .text p {
     font-size: 16px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #333;
-    outline: none;
-    resize: none;
-}
-.contactForm .inputBox span{
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 16px;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
     color: #666;
 }
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span{
-    color: #e91e63;
-    font-size: 12px;
-    transform: translateY(-20px);
+
+.contactForm form h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
 }
-.contactForm .inputBox input[type="submit"]{
-    width: 100px;
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input, .contactForm .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+.contactForm .inputBox input:focus, .contactForm .inputBox textarea:focus {
+    background: #e0e0e0;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 16px;
+    color: #999;
+    transition: 0.3s ease;
+}
+
+.contactForm .inputBox input:focus + span,
+.contactForm .inputBox textarea:focus + span,
+.contactForm .inputBox input:valid + span,
+.contactForm .inputBox textarea:valid + span {
+    top: -20px;
+    left: 10px;
+    color: #00bcd4;
+    font-size: 12px;
+}
+
+.contactForm .inputBox input[type="submit"] {
     background: #00bcd4;
     color: #fff;
     border: none;
     cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
+    transition: background 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .contact{
-        padding: 50px;
-    }
-    .container{
-        flex-direction: column;
-    }
-    .container .contactInfo{
-        margin-bottom: 40px;
-    }
-    .container .contactInfo,
-    .contactForm
-    {
-        width: 100%;
+.contactForm .inputBox input[type="submit"]:hover {
+    background: #0097a7;
+}
+
+.download_pdf-btn .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.download_pdf-btn .btn:hover {
+    background: #0097a7;
+} */
+
+
+/* Todo: making code attractive */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #1a202c;
+    color: #e2e8f0;
+}
+
+.contact {
+    padding: 50px 100px;
+}
+
+#mybutton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#mybutton .-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#mybutton .-btn:hover {
+    background: #0097a7;
+    transform: translateY(-5px);
+}
+
+.content {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #e2e8f0;
+}
+
+.content p {
+    font-size: 18px;
+    color: #cbd5e0;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactInfo, .contactForm {
+    width: 48%;
+}
+
+.contactInfo .box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #2d3748;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactInfo .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.contactInfo .icon {
+    font-size: 40px;
+    color: #00bcd4;
+    margin-right: 20px;
+}
+
+.contactInfo .text h3 {
+    font-size: 20px;
+    color: #e2e8f0;
+    margin-bottom: 5px;
+}
+
+contactInfo .text p {
+    font-size: 16px;
+    color: #cbd5e0;
+}
+
+.contactForm form h2 {
+    font-size: 24px;
+    color: #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    background: #2d3748;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #e2e8f0;
+    transition: background 0.3s ease;
+}
+
+.contactForm .inputBox input:focus,
+.contactForm .inputBox textarea:focus {
+    background: #4a5568;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 16px;
+    color: #a0aec0;
+    transition: 0.3s ease;
+}
+
+.contactForm .inputBox input:focus + span,
+.contactForm .inputBox textarea:focus + span,
+.contactForm .inputBox input:valid + span,
+.contactForm .inputBox textarea:valid + span {
+    top: -20px;
+    left: 10px;
+    color: #00bcd4;
+    font-size: 12px;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contactForm .inputBox input[type="submit"]:hover {
+    background: #0097a7;
+    transform: translateY(-5px);
+}
+
+.download_pdf-btn .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.download_pdf-btn .btn:hover {
+    background: #0097a7;
+    transform: translateY(-5px);
+}
+
+/* Existing CSS remains the same */
+
+.mapSection {
+    flex: 1;
+    height: calc(4 * 160px); /* Assuming each block is 160px in height */
+    background-color: #2d3748;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mapSection:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+}
+
+.mapSection:hover:before {
+    transform: translate(-50%, -50%) rotate(360deg);
+    transition: transform 1s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.contactInfo, .contactForm {
+    width: calc(50% - 20px); /* Adjust width to fit in the container with margin */
+}
+
+.mapSection {
+    width: calc(50% - 20px); /* Adjust width to fit in the container with margin */
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .contactInfo, .contactForm, .mapSection {
+        width: 100%; /* Set width to 100% on smaller screens */
     }
 }
-/* @media (max-width: 991px) {
-    .contact{
-        padding: 50px;
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.contactInfo {
+    width: calc(50% - 20px); /* Adjust width to fit in the container with margin */
+    margin-bottom: 20px;
+}
+
+.mapAndContactForm {
+    width: calc(50% - 20px); /* Adjust width to fit in the container with margin */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapSection {
+    height: 300px; /* Adjust as needed */
+    background-color: #2d3748;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contactForm {
+    /* Styles for the contact form */
+}
+
+@media screen and (max-width: 768px) {
+    .contactInfo, .mapAndContactForm {
+        width: 100%; /* Set width to 100% on smaller screens */
     }
-    .container{
-        flex-direction: column;
-    }
-    .container .contactInfo{
-        margin-bottom: 40px;
-    }
-    .container .contactInfo,
-    .contactForm
-    {
-        width: 100%;
-    }
-} */
+}
+
+.mapSection {
+    width: 100%; /* Occupy full width */
+    height: 300px; /* Keep the height unchanged */
+    background-color: #2d3748;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contactForm {
+    width: 100%; /* Occupy full width */
+    /* Styles for the contact form */
+}
