@@ -26,7 +26,8 @@ body {
 .iframe-container {
     position: relative;
     width: 100%;
-    padding-bottom: 31.58%; /* This value maintains a 16:9 aspect ratio */
+    padding-bottom: 28%; /* This value maintains a 16:9 aspect ratio */
+    /* padding-bottom: 31.58%; This value maintains a 16:9 aspect ratio */
   }
   
   /* Style the iframe to fill its container */
@@ -41,7 +42,8 @@ body {
   /* Media Query for responsiveness */
   @media (max-width: 768px) {
     .iframe-container {
-      padding-bottom: 56.25%; /* For 9:16 aspect ratio on smaller screens */
+      padding-bottom: 85px; /* For 9:16 aspect ratio on smaller screens */
+      margin-bottom: 50px;
     }
   }
 /* *! END */
@@ -50,7 +52,7 @@ body {
 
 .container_service {
   max-width: 100%;
-  padding: 20px;
+  padding: 25px;
 }
 
 h1 {

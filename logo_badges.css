@@ -96,7 +96,7 @@ h1 {
 .description-container {
     padding: 10px;
     border: 2px solid #333; /* Add border to the description container */
-    border-radius: 10px; /* Round the corners */
+    border-radius: 7px; /* Round the corners */
     background-color: #fff; /* Add a background color */
 }
 
